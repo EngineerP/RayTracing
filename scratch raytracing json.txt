@@ -1,0 +1,35 @@
+    {
+      "type": "soup",
+      "material": "black paint",
+      "stl": "batsignal(1).stl"
+    },
+    {
+      "type": "sphere",
+      "material": "green metal",
+      "center": [ 0, 0, 0 ],
+      "radius": 0.5
+    },
+    {
+      "type": "plane",
+      "material": "gray mirror",
+      "point": [ -100, 50, 50 ],
+      "normal": [ -0.75271, 0.564532, 0.338719 ]
+    }
+
+  "camera": {
+    "type": "perspective",
+    "focal_length": 3,
+    "eye": [ 0, -250, 30 ],
+    "up": [ 0, 0, 1 ],
+    "look": [ 0, 0, 1 ],
+    "height": 1,
+    "width": 1.7777777778
+  },
+
+  "lights": [
+    {
+      "type": "point",
+      "color": [ 1.0, 1.0, 1.0 ],
+      "position": [ 100, -100, -40 ]
+    }
+  ],

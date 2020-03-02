@@ -1,0 +1,128 @@
+{
+  "materials": [
+    {
+      "name": "matte gray",
+      "ka": [ 0.90, 0.90, 0.90 ],
+      "kd": [ 0.95, 0.95, 0.95 ],
+      "ks": [ 0.3, 0.3, 0.3 ],
+      "km": [ 0.05, 0.05, 0.05 ],
+      "phong_exponent": 200
+    },
+    {
+      "name": "black paint",
+      "ka": [ 0.1, 0.1, 0.1 ],
+      "kd": [ 0.1, 0.1, 0.1 ],
+      "ks": [ 0.1, 0.1, 0.1 ],
+      "km": [ 0.0, 0.0, 0.0 ],
+      "phong_exponent": 200
+    },
+    {
+      "name": "brown plastic",
+      "ka": [ 0.596078, 0.305882, 0.639216 ],
+      "kd": [ 0.3, 0.25, 0.2 ],
+      "ks": [ 0.1, 0.1, 0.1 ],
+      "km": [ 0.0, 0.0, 0.0 ],
+      "phong_exponent": 200
+    },
+    {
+      "name": "gray mirror",
+      "ka": [ 0.1, 0.1, 0.1 ],
+      "kd": [ 0.1, 0.1, 0.1 ],
+      "ks": [ 0.1, 0.1, 0.1 ],
+      "km": [ 0.999, 0.999, 0.999 ],
+      "phong_exponent": 1000
+    },
+    {
+      "name": "yellow bone",
+      "ka": [ 0.95, 0.95, 0.9 ],
+      "kd": [ 0.95, 0.95, 0.9 ],
+      "ks": [ 0.8, 0.8, 0.8 ],
+      "km": [ 0.00, 0.00, 0.00 ],
+      "phong_exponent": 200
+    },
+    {
+      "name": "light blue",
+      "ka": [ 0.1, 0.1, 0.2 ],
+      "kd": [ 0.5, 0.6, 0.8 ],
+      "ks": [ 0.05, 0.05, 0.1 ],
+      "km": [ 0.2, 0.2, 0.2 ],
+      "phong_exponent": 20
+    },
+    {
+      "name": "green metal",
+      "ka": [ 0.301961, 0.686275, 0.290196 ],
+      "kd": [ 0.301961, 0.686275, 0.290196 ],
+      "ks": [ 0.301961, 0.686275, 0.290196 ],
+      "km": [ 0.301961, 0.686275, 0.290196 ],
+      "phong_exponent": 2000
+    },
+    {
+      "name": "Lambertian blue",
+      "ka": [ 0.2, 0.3, 0.8 ],
+      "kd": [ 0.2, 0.3, 0.8 ],
+      "ks": [ 0.1, 0.1, 0.1 ],
+      "km": [ 0.3, 0.3, 0.3 ],
+      "phong_exponent": 20
+    },
+    {
+      "name": "red metal",
+      "ka": [ 0.894118, 0.101961, 0.109804 ],
+      "kd": [ 0.894118, 0.101961, 0.109804 ],
+      "ks": [ 0.894118, 0.101961, 0.109804 ],
+      "km": [ 0.894118, 0.101961, 0.109804 ],
+      "phong_exponent": 2000
+    }
+  ],
+  "camera": {
+    "type": "perspective",
+    "focal_length": 1,
+    "eye": [ -10, -100, 0 ],
+    "up": [ 0, 0, 1 ],
+    "look": [ 0, 1, 0 ],
+    "height": 1,
+    "width": 1.7777777778
+  },
+  "lights": [
+    {
+      "type": "point",
+      "position": [ 150, -400, -200 ],
+      "color": [ 0.5, 0.5, 0.5 ]
+    },
+    {
+      "type": "point",
+      "position": [ -150, -400, -200 ],
+      "color": [ 0.5, 0.5, 0.5 ]
+    }
+  ],
+  "objects": [
+    {
+      "type": "sphere",
+      "material": "red metal",
+      "center": [ -10, 200, 75 ],
+      "radius": 10
+    },
+    {
+      "type": "plane",
+      "material": "matte gray",
+      "point": [ 0, 0, 1500 ],
+      "normal": [ 1.5, -1.5, -1.5 ]
+    },
+    {
+      "type": "soup",
+      "material": "black paint",
+      "stl": "BatSignal4.stl"
+    },
+    {
+      "type": "plane",
+      "material": "matte gray",
+      "point": [ 0, 0, 1500 ],
+      "normal": [ -1.5, -1.5, -1.5 ]
+    },
+    {
+      "type": "plane",
+      "material": "Lambertian blue",
+      "point": [ 0, 0, 75 ],
+      "normal": [ 0, 0, -1 ]
+    }
+  ]
+}
